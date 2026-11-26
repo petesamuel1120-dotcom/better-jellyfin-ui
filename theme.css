@@ -269,8 +269,16 @@ width: 100%;
   background: rgba(0, 0, 0, 0);
 }
 html,body{
-    transition: 0.1s;
     scroll-behavior: smooth;
+}
+html {
+  scrollbar-gutter: stable;
+}
+/* Keep MUI scroll locking from shifting the page when it hides the scrollbar. */
+html[style*="overflow: hidden"][style*="padding-right"],
+body[style*="overflow: hidden"][style*="padding-right"],
+.mui-fixed[style*="padding-right"] {
+  padding-right: 0 !important;
 }
 .libraryPage {
   padding-top: 7em !important;
@@ -751,7 +759,7 @@ transition: 0.2s;
   transition: 0.2s;
 }
 .iconOsd.volumeOsd {
-  padding: 0.35em;
+  display: none !important;
 }
 .videoOsdBottom {
   width: 98%;
@@ -762,7 +770,7 @@ transition: 0.2s;
   background: #ffffff0a;
   height: fit-content;
   padding: 6px;
-  margin: 10px 0px;
+  margin: 10px 0px 2px;
   box-shadow: 1px 2px 2px -3px rgba(255, 255, 255, 0.65) inset, -2px -2px 2px -3px rgba(255, 255, 255, 0.61) inset, 0px 0px 15px rgba(0, 0, 0, 0.329);
   transition: 0.3s;
   animation: slide-up-centered 0.5s 1 ;
