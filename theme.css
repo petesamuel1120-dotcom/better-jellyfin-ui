@@ -751,7 +751,7 @@ transition: 0.2s;
   transition: 0.2s;
 }
 .iconOsd.volumeOsd {
-  padding: 0.5em;
+  padding: 0.35em;
 }
 .videoOsdBottom {
   width: 98%;
@@ -1978,6 +1978,14 @@ header .MuiButtonBase-root.MuiButton-textPrimary:not(.MuiButtonBase-root.MuiButt
 .MuiBox-root.css-1riowxi {
 	gap: 5px;
 	margin-right: 5px;
+}
+.MuiBox-root.css-1riowxi,
+.MuiBox-root.css-1riowxi *,
+.MuiBox-root.css-1riowxi *::before,
+.MuiBox-root.css-1riowxi *::after {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
 }
 #indexPage {
 	padding-top: 25px !important;
