@@ -1988,21 +1988,8 @@ header .MuiButtonBase-root.MuiButton-textPrimary:not(.MuiButtonBase-root.MuiButt
 header .MuiButtonBase-root.MuiIconButton-root{
   width: 38px;
 	height: 38px;
-  transition: 0.2s;
-}
-@keyframes headerbuttonani{
-  from,to{
-    transform: inherit;
-  }
-  50%{
-    transform: scale(0.9);
-  }
-}
-header .MuiButtonBase-root.MuiIconButton-root:not(:active){
-  animation: headerbuttonani 0.5s;
-}
-header .MuiButtonBase-root.MuiIconButton-root:active{
-  transform: scale(1.1);
+  animation: none;
+  transform: none;
 }
 .MuiButtonBase-root.MuiIconButton-root::after {
 	position: absolute;
