@@ -750,6 +750,9 @@ transition: 0.2s;
   scale: 1;
   transition: 0.2s;
 }
+.iconOsd.volumeOsd {
+  padding: 0.5em;
+}
 .videoOsdBottom {
   width: 98%;
   left: 50%;
